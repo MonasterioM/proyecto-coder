@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(0, 255, 255);
+    display: flex;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100vw;
+}
+header img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: flex-start;
+} 
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 20px 20px 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: 20px;
+}
+/*--MEDIA QUERIS HEADER--*/
+@media screen and (max-width: 787px){
+    header nav{
+        flex-direction: column;
+    }    
+}
+@media screen and (max-width: 660px){
+    header nav ul {
+        flex-direction: column;
+    }
+}
+/*----------CSS del index---------*/
+main h1 {
+    font-family:'Lato', sans-serif;
+    color: rgb(190, 0, 248);
+    text-align: center;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.cabeza {
+    width: 100%;
+    height: 95vh;
+    background-image:  url(../img/logopng-01\ \(2\).png), linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
+    background-color: beige;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+}
+
+.cabeza p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ofertas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "video imagenes imagenes";
+}
+.video{
+    grid-area: video;
+}
+.imagenes{
+    grid-area: imagenes;
+}
+.imagenes h2 {
+    color: red;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.imagenes>div {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.imagenes div div a {
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+}
+
+.cabeza div {
+    width: 80%;
+    text-align: center;
+}
+
+.cards {
+    background-image: url(../img/pañales.jpg);
+    padding-bottom: 20px;
+}
+
+.cards h2 {
+    color: rgb(122, 255, 211);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cards img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.cards>div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.cards div div {
+    border: solid 1px wheat;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.cards div div h3 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cards div div p {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.cards div div a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+
+}
+/*--MEDIA QUERIS INDEX--*/
+@media screen and(max-width: 960px) { 
+    .ofertas {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "video"
+        "imagenes";
+    }
+    .video{
+        grid-area: video;
+    }
+    .imagenes{
+        grid-area: imagenes;
+    }
+}
+/* ----------CSS de productos--------- */
+
+.prodsec {
+    background-image:url(../img/pañales.jpg);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "submenu cards1 cards1"
+        "submenu cards2 cards2";
+}
+
+.submenu {
+    grid-area: submenu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filtro-productos {
+    background-color: rgba(240, 192, 130, 0.863);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.filtro-productos div {
+    margin: 35px;
+}
+.cards1{
+    grid-area: cards1;
+}
+.cards1 h2 {
+    color: rgb(122, 255, 211);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cards1 img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promo div {
+    margin: 30px;
+}
+
+.cards1 div div {
+    border: solid 1px wheat;
+    border-radius: 15px;
+    width: 200px;
+    height: 330px;
+    text-align: center;
+    background-color: rgb(250, 235, 215);
+    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+}
+
+.cards1 div div h3 {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cards1 div div p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.cards1 div div form {
+    margin-bottom: 15px;
+}
+
+.cards1 div div a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+}
+.cards2{
+    grid-area: cards2;
+}
+.cards2 h2 {
+    color: rgb(122, 255, 211);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cards2 img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.cards2>div {
+    display: flex;
+    justify-items: center;
+}
+
+.promo div {
+    margin: 30px;
+}
+
+.cards2 div div {
+    border: solid 1px wheat;
+    border-radius: 15px;
+    width: 200px;
+    height: 330px;
+    text-align: center;
+    background-color: rgb(250, 235, 215);
+    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+}
+
+.cards2 div div h3 {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cards2 div div p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.cards2 div div form {
+    margin-bottom: 15px;
+}
+
+.cards2 div div a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+}
+/* ----------------------------------- */
+/* ----------CSS de juguetes--------- */
+/* --------------------------------- */
+.grid-contenedor-padre{
+    background-image:url(../img/pañales.jpg);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "submenu cards1 cards1"
+        "submenu cards2 cards2";
+}
+.submenup {
+    grid-area: submenu;
+    margin-top: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filtro-juguetes {
+    background-color: rgba(240, 192, 130, 0.863);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.filtro-juguetes div {
+    margin: 35px;
+}
+.cards1-juguetes{
+    grid-area: cards1;
+}
+.cards1-juguetes h2 {
+    color: rgb(122, 255, 211);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cards1-juguetes img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards1-juguetes div div {
+    border: solid 1px wheat;
+    border-radius: 15px;
+    width: 200px;
+    height: 330px;
+    text-align: center;
+    background-color: rgb(250, 235, 215);
+    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+}
+
+.cards1-juguetes div div h3 {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cards1-juguetes div div p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.cards1-juguetes div div form {
+    margin-bottom: 15px;
+}
+
+.cards1-juguetes div div a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+}
+.cards2-juguetes{
+    grid-area: cards2;
+}
+.cards2-juguetes h2 {
+    color: rgb(122, 255, 211);
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.cards2-juguetes img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.cards2-juguetes>div {
+    display: flex;
+    justify-items: center;
+}
+
+.promo div {
+    margin: 30px;
+}
+
+.cards2-juguetes div div {
+    border: solid 1px wheat;
+    border-radius: 15px;
+    width: 200px;
+    height: 330px;
+    text-align: center;
+    background-color: rgb(250, 235, 215);
+    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+}
+
+.cards2-juguetes div div h3 {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cards2-juguetes div div p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.cards2-juguetes div div form {
+    margin-bottom: 15px;
+}
+
+.cards2-juguetes div div a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(245, 153, 240);
+}
+/*-----------CSS de ubicacion---------- */
+.ubicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "gps text";
+    background-color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+.gps{
+    grid-area: gps;
+}
+.textubi {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* -----------CSS de contacto---------- */
+#contacto {
+    background-image: url(../img/pañales.jpg);
+}
+
+.formulario {
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario div {
+    margin: 20px;
+}
+
+.sex {
+    display: flex;
+}
+
+/* -----------CSS del footer---------- */
+footer {
+    background-color: aqua;
+}
+
+.pie ul {
+    text-align: center;
+}
+
+.pie ul li {
+
+    display: inline-block;
+    margin: 20px;
+}
+
+.LogoPie {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+@media screen and (max-width:560px) {
+    
+    .pie ul li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
