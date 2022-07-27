@@ -38,7 +38,21 @@ header nav ul li a {
     color: black;
     font-weight: 200;
     font-size: 20px;
+    transition: 0.5s;
 }
+header a:hover{
+    text-decoration: solid;
+    font-size: 30px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* animation: marcado; */
+}
+/* @keyframes marcado{
+    100%{
+        background-color: blueviolet;
+    }
+} */
 /*--MEDIA QUERIS HEADER--*/
 @media screen and (max-width: 787px){
     header nav{
@@ -66,16 +80,14 @@ main h1 {
     background-image:  url(../img/logopng-01\ \(2\).png), linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
     background-color: beige;
     background-position: left;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
 }
 
 .cabeza p {
     text-align: center;
-    margin-top: 20px;
 }
 
 .ofertas {
@@ -107,7 +119,13 @@ main h1 {
     margin: 20px;
     flex-wrap: wrap;
 }
-
+.imagenes div div{
+    transition: 1.5s;
+}
+.imagenes div div:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 0, 0, 0.473);
+}
 .imagenes div div a {
     text-decoration: none;
     padding: 1px;
@@ -176,7 +194,17 @@ main h1 {
 
 }
 /*--MEDIA QUERIS INDEX--*/
-@media screen and(max-width: 960px) { 
+@media screen and (max-width: 654px){
+    main h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 444px){
+    .cabeza p{
+        font-size:15px;
+    }
+}
+@media screen and (max-width: 960px) { 
     .ofertas {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -196,7 +224,7 @@ main h1 {
 .prodsec {
     background-image:url(../img/pañales.jpg);
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-auto-rows: auto;
     grid-template-areas:
         "submenu cards1 cards1"
@@ -347,7 +375,7 @@ main h1 {
 .grid-contenedor-padre{
     background-image:url(../img/pañales.jpg);
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-auto-rows: auto;
     grid-template-areas:
         "submenu cards1 cards1"
