@@ -8,7 +8,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header{
+/* header{
     background-color: rgb(0, 255, 255);
     display: flex;
 }
@@ -17,13 +17,15 @@ header nav{
     justify-content: space-between;
     align-items: center;    
     width: 100vw;
+    height: 10
 }
 header img{
     display: flex;
     width: 150px;
     height: 150px;
     justify-content: flex-start;
-} 
+} */
+/* 
 header nav ul {
     list-style: none;
     display: flex;
@@ -47,14 +49,14 @@ header a:hover{
     border: 1px solid black;
     border-radius: 5px;
     /* animation: marcado; */
-}
+/* } */
 /* @keyframes marcado{
     100%{
         background-color: blueviolet;
     }
 } */
 /*--MEDIA QUERIS HEADER--*/
-@media screen and (max-width: 787px){
+/*@media screen and (max-width: 787px){
     header nav{
         flex-direction: column;
     }    
@@ -63,82 +65,27 @@ header a:hover{
     header nav ul {
         flex-direction: column;
     }
-}
+} */
 /*----------CSS del index---------*/
 main h1 {
     font-family:'Lato', sans-serif;
-    color: rgb(190, 0, 248);
+    color: rgb(0, 66, 248);
     text-align: center;
     font-style: italic;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .cabeza {
     width: 100%;
     height: 95vh;
-    background-image:  url(../img/logopng-01\ \(2\).png), linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
-    background-color: beige;
-    background-position: left;
-    background-size:contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    background-image: linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
 }
 
-.cabeza p {
-    text-align: center;
+.ofertas img{
+    
+    height: 400px;
 }
-
-.ofertas {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid: 10px;
-    background-color: rgb(255, 255, 255);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "video imagenes imagenes";
-}
-.video{
-    grid-area: video;
-}
-.imagenes{
-    grid-area: imagenes;
-}
-.imagenes h2 {
-    color: red;
-    text-align: center;
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-}
-
-.imagenes>div {
-    display: flex;
-    justify-content:space-evenly;
-    margin: 20px;
-    flex-wrap: wrap;
-}
-.imagenes div div{
-    transition: 1.5s;
-}
-.imagenes div div:hover{
-    transform: scale(1.1);
-    background-color: rgba(255, 0, 0, 0.473);
-}
-.imagenes div div a {
-    text-decoration: none;
-    padding: 1px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-}
-
-.cabeza div {
-    width: 80%;
-    text-align: center;
-}
-
 .cards {
     background-image: url(../img/pañales.jpg);
     padding-bottom: 20px;
@@ -194,14 +141,37 @@ main h1 {
 
 }
 /*--MEDIA QUERIS INDEX--*/
-@media screen and (max-width: 654px){
+@media screen and (max-width: 805px){
     main h1{
         font-size: 50px;
     }
 }
+@media screen and (max-width: 654px){
+    main h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 510px){
+    main h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1075px){
+    .cabeza img{
+        width: 500px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 619px){
+    .cabeza img{
+        width: 400px;
+        height: 350px;
+    }
+}
 @media screen and (max-width: 444px){
-    .cabeza p{
-        font-size:15px;
+    .cabeza img{
+        width: 350px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 960px) { 
@@ -557,9 +527,7 @@ main h1 {
     }
 }
 /* -----------CSS de contacto---------- */
-#contacto {
-    background-image: url(../img/pañales.jpg);
-}
+
 
 .formulario {
     background-color: antiquewhite;
@@ -577,8 +545,11 @@ main h1 {
 }
 
 /* -----------CSS del footer---------- */
-footer {
+.pie {
     background-color: aqua;
+    position: absolute;
+    width: 100%;
+    padding: 1em 0;
 }
 
 .pie ul {
