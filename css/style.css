@@ -528,20 +528,8 @@ main h1 {
 }
 /* -----------CSS de contacto---------- */
 
-
-.formulario {
-    background-color: antiquewhite;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.formulario div {
-    margin: 20px;
-}
-
-.sex {
-    display: flex;
+#contacto{
+    background-image: linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
 }
 
 /* -----------CSS del footer---------- */
