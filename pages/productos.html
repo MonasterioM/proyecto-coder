@@ -20,9 +20,9 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item nav-pills nav-fill">
                     <a class="nav-link active" href="./productos.html">Pañales</a>
                   </li>
                   <li class="nav-item">
@@ -53,28 +53,38 @@
                     <ul>
                         <div class="filtro-productos">                          
                             <h4>Filtros</h4>
-                            <p>Precio:</p>
-                            <div>                            
-                                <label for="precio">$1000 - $5000</label>
-                                <input type="radio" name="precio"value="$1000 - $5000">
+                            <p>Talles: </p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  RN - RN+
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  P - M
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  M - G
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  G - XG
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  XG - XXG
+                                </label>
+                              </div>
                             </div>
-                            <div>
-                                <label for="precio">$5000 - $10000</label>
-                                <input type="radio" name="precio"value="$5000 - $10000">
-                            </div>
-                            <div>
-                                <label for="precio">$10000 - $15000</label>
-                                <input type="radio" name="precio"value="$10000 - $15000">
-                            </div>
-                            <div>
-                                <label for="precio">$15000 - $20000</label>
-                                <input type="radio" name="precio"value="$15000 - $20000">
-                            </div>
-                            <div>
-                                <label for="precio">$20000 - $25000</label>
-                                <input type="radio" name="precio"value="$20000 - $25000">
-                            </div>
-                        </div>
                     </ul>
                 </nav>
             </section>

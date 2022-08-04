@@ -33,7 +33,7 @@
                       Articulos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                      <li class="nav-pills nav-fill"><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
                       <li><a class="dropdown-item" href="#">Toallas humedas</a></li>
                       <li><a class="dropdown-item" href="#">Variado</a></li>
                     </ul>
@@ -54,26 +54,42 @@
                         <div class="filtro-juguetes">                          
                             <h4>Filtros</h4>
                             <p>Precio:</p>
-                            <div>                            
-                                <label for="precio">$1000 - $5000</label>
-                                <input type="radio" name="precio"value="$1000 - $5000">
-                            </div>
-                            <div>
-                                <label for="precio">$5000 - $10000</label>
-                                <input type="radio" name="precio"value="$5000 - $10000">
-                            </div>
-                            <div>
-                                <label for="precio">$10000 - $15000</label>
-                                <input type="radio" name="precio"value="$10000 - $15000">
-                            </div>
-                            <div>
-                                <label for="precio">$15000 - $20000</label>
-                                <input type="radio" name="precio"value="$15000 - $20000">
-                            </div>
-                            <div>
-                                <label for="precio">$20000 - $25000</label>
-                                <input type="radio" name="precio"value="$20000 - $25000">
-                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  $5000 - $10000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    $10000 - $15000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $15000 - $20000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    $20000 - $23000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $23000 - $25000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    $25000 - $27000
+                                </label>
+                              </div>
                         </div>
                     </ul>
                 </nav>
