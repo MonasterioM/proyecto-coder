@@ -1,0 +1,38 @@
+.ubicacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "gps text";
+    background-color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    .gps{
+        grid-area: gps;
+        iframe{
+            width:100%;
+            height: 100vmin;
+        }
+    }
+    .textubi{
+        grid-area:text;
+    }
+}
+@media screen and (max-width: 700px) {
+    .ubicacion{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "gps"
+        "txt";
+    }
+    .gps{
+        grid-area: gps;
+    }
+    .gps iframe{
+        width:350px;
+        height: 100vh;
+    }
+    .textubi{
+        grid-area: txt;
+    }
+}

@@ -1,0 +1,121 @@
+.grid-contenedor-padre{
+    background-image:url(../img/pañales.jpg);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "submenu cards1 cards1"
+       "submenu cards2 cards2";
+       .submenup{
+        grid-area: submenu;
+        margin-top: 50%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }        
+        .filtro-juguetes{
+            background-color: rgba(240, 192, 130, 0.863);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            div{
+                margin: 35px;
+            }
+        }
+        .cards1-juguetes{
+            grid-area: cards1;
+            h2{
+                color: rgb(122, 255, 211);
+                font-size: 35px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+            .promo{
+                display: flex;
+                justify-content: center;
+                div{
+                    margin: 30px;
+                    border: solid 1px wheat;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 330px;
+                    text-align: center;
+                    background-color: rgb(250, 235, 215);
+                    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                    h3{
+                        color: black;
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: black;
+                        margin-bottom: 10px;
+                    }
+                    form{
+                        margin-bottom: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: black;
+                        background-color: rgb(245, 153, 240);
+                    }
+                }
+            }
+        }
+        .cards2-juguetes{
+            grid-area: cards2;
+            h2{
+                color: rgb(122, 255, 211);
+                font-size: 35px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+            .promo{
+                display: flex;
+                justify-items: center;
+                div{
+                    margin: 30px;
+                    border: solid 1px wheat;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 330px;
+                    text-align: center;
+                    background-color: rgb(250, 235, 215);
+                    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                    h3{
+                        color: black;
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: black;
+                        margin-bottom: 10px;
+                    }
+                    form{
+                        margin-bottom: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: black;
+                        background-color: rgb(245, 153, 240);
+                    }
+                }
+            }
+        }
+}

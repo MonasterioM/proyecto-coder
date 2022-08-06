@@ -1,0 +1,117 @@
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .cabeza{
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
+        h1{
+            font-family:'Lato', sans-serif;
+            color: rgb(0, 66, 248);
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+    .principal{
+        .carrusell{
+            .ofertas{
+                img{
+                    height: 400px;
+                }
+            }
+        }
+        .cards{
+            background-image: url(/img/pañales.jpg);
+            padding-bottom: 20px;
+            h2{
+                color: rgb(122, 255, 211);
+                font-size: 35px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+            .promo{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                div{
+                    border: solid 1px wheat;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 300px;
+                    text-align: center;
+                    background-color: antiquewhite;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                    h3{
+                        color: black;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: black;
+                        margin-bottom: 20px;
+                    }
+                    a{
+                        text-decoration: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: black;
+                        background-color: rgb(245, 153, 240);                   
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 805px){
+    main h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 654px){
+    main h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 510px){
+    main h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1075px){
+    .cabeza img{
+        width: 500px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 619px){
+    .cabeza img{
+        width: 400px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 444px){
+    .cabeza img{
+        width: 350px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 960px) { 
+    .ofertas {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "video"
+        "imagenes";
+    }
+    .video{
+        grid-area: video;
+    }
+    .imagenes{
+        grid-area: imagenes;
+    }
+}

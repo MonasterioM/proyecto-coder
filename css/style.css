@@ -1,562 +1,352 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* header{
-    background-color: rgb(0, 255, 255);
-    display: flex;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    width: 100vw;
-    height: 10
-}
-header img{
-    display: flex;
-    width: 150px;
-    height: 150px;
-    justify-content: flex-start;
-} */
-/* 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
+header a:hover {
+  text-decoration: solid;
+  font-size: 20px;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 15px;
+  animation: marcado; }
 
-header nav ul li {
-    margin: 20px 20px 0 20px;
-}
+.pie {
+  background-color: aqua;
+  position: absolute;
+  width: 100%;
+  padding: 1em 0; }
+  .pie ul {
+    text-align: center; }
+    .pie ul li {
+      display: inline-block;
+      margin: 20px; }
+      .pie ul li a .LogoPie {
+        width: 40px;
+        height: 40px;
+        align-items: center; }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 200;
-    font-size: 20px;
-    transition: 0.5s;
-}*/
-header a:hover{
-    text-decoration: solid;
-    font-size: 20px;
-    background-color: antiquewhite;
-    border: 1px solid black;
-    border-radius: 15px;
-    animation: marcado;
-}
- @keyframes marcado{
-    100%{
-        background-color: blueviolet;
-    }
-} 
-/*--MEDIA QUERIS HEADER--*/
-/*@media screen and (max-width: 787px){
-    header nav{
-        flex-direction: column;
-    }    
-}
-@media screen and (max-width: 660px){
-    header nav ul {
-        flex-direction: column;
-    }
-} */
-/*----------CSS del index---------*/
-main h1 {
-    font-family:'Lato', sans-serif;
-    color: rgb(0, 66, 248);
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-    font-weight: 700;
-}
+@media screen and (max-width: 560px) {
+  .pie ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }
 
-.cabeza {
+main {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+  main .cabeza {
     width: 100%;
     height: 95vh;
-    background-image: linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
-}
-
-.ofertas img{
-    
-    height: 400px;
-}
-.cards {
-    background-image: url(../img/pañales.jpg);
-    padding-bottom: 20px;
-}
-
-.cards h2 {
-    color: rgb(122, 255, 211);
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.cards img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-.cards>div {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
-
-.cards div div {
-    border: solid 1px wheat;
-    border-radius: 15px;
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    background-color: antiquewhite;
-}
-
-.cards div div h3 {
-    color: black;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.cards div div p {
-    color: black;
-    margin-bottom: 20px;
-}
-
-.cards div div a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-
-}
-/*--MEDIA QUERIS INDEX--*/
-@media screen and (max-width: 805px){
-    main h1{
-        font-size: 50px;
-    }
-}
-@media screen and (max-width: 654px){
-    main h1{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 510px){
-    main h1{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 1075px){
-    .cabeza img{
-        width: 500px;
-        height: 450px;
-    }
-}
-@media screen and (max-width: 619px){
-    .cabeza img{
-        width: 400px;
-        height: 350px;
-    }
-}
-@media screen and (max-width: 444px){
-    .cabeza img{
-        width: 350px;
+    background-image: linear-gradient(#ffdcaf, white); }
+    main .cabeza h1 {
+      font-family: 'Lato', sans-serif;
+      color: #0042f8;
+      text-align: center;
+      font-style: italic;
+      font-size: 50px;
+      font-weight: 700; }
+  main .principal .carrusell .ofertas img {
+    height: 400px; }
+  main .principal .cards {
+    background-image: url(/img/pañales.jpg);
+    padding-bottom: 20px; }
+    main .principal .cards h2 {
+      color: #7affd3;
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    main .principal .cards .promo {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      main .principal .cards .promo div {
+        border: solid 1px wheat;
+        border-radius: 15px;
+        width: 200px;
         height: 300px;
-    }
-}
-@media screen and (max-width: 960px) { 
-    .ofertas {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "video"
-        "imagenes";
-    }
-    .video{
-        grid-area: video;
-    }
-    .imagenes{
-        grid-area: imagenes;
-    }
-}
-/* ----------CSS de productos--------- */
+        text-align: center;
+        background-color: antiquewhite; }
+        main .principal .cards .promo div img {
+          width: 200px;
+          height: 200px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px; }
+        main .principal .cards .promo div h3 {
+          color: black;
+          margin-bottom: 10px;
+          font-size: 20px; }
+        main .principal .cards .promo div p {
+          color: black;
+          margin-bottom: 20px; }
+        main .principal .cards .promo div a {
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 5px;
+          color: black;
+          background-color: #f599f0; }
+
+@media screen and (max-width: 805px) {
+  main h1 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 654px) {
+  main h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 510px) {
+  main h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1075px) {
+  .cabeza img {
+    width: 500px;
+    height: 450px; } }
+
+@media screen and (max-width: 619px) {
+  .cabeza img {
+    width: 400px;
+    height: 350px; } }
+
+@media screen and (max-width: 444px) {
+  .cabeza img {
+    width: 350px;
+    height: 300px; } }
+
+@media screen and (max-width: 960px) {
+  .ofertas {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "video" "imagenes"; }
+  .video {
+    grid-area: video; }
+  .imagenes {
+    grid-area: imagenes; } }
 
 .prodsec {
-    background-image:url(../img/pañales.jpg);
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: auto;
-    grid-template-areas:
-        "submenu cards1 cards1"
-        "submenu cards2 cards2";
-}
-
-.submenu {
+  background-image: url(../img/pañales.jpg);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
+  .prodsec .submenup {
     grid-area: submenu;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.filtro-productos {
-    background-color: rgba(240, 192, 130, 0.863);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.filtro-productos div {
-    margin: 35px;
-}
-.cards1{
-    grid-area: cards1;
-}
-.cards1 h2 {
-    color: rgb(122, 255, 211);
+    align-items: center; }
+    .prodsec .submenup nav ul .filtro-productos {
+      background-color: rgba(240, 192, 130, 0.863);
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px; }
+      .prodsec .submenup nav ul .filtro-productos div {
+        margin: 35px; }
+  .prodsec .cards1 {
+    grid-area: cards1; }
+    .prodsec .cards1 h2 {
+      color: #7affd3;
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .prodsec .cards1 .promo {
+      display: flex;
+      flex-wrap: wrap; }
+      .prodsec .cards1 .promo div {
+        margin: 30px;
+        border: solid 1px wheat;
+        border-radius: 15px;
+        width: 200px;
+        height: 330px;
+        text-align: center;
+        background-color: antiquewhite;
+        box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75); }
+        .prodsec .cards1 .promo div img {
+          width: 200px;
+          height: 200px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px; }
+        .prodsec .cards1 .promo div h3 {
+          color: black;
+          margin-bottom: 5px;
+          font-size: 20px; }
+        .prodsec .cards1 .promo div p {
+          color: black;
+          margin-bottom: 10px; }
+        .prodsec .cards1 .promo div form {
+          margin-bottom: 15px; }
+        .prodsec .cards1 .promo div a {
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 5px;
+          color: black;
+          background-color: #f599f0; }
+  .prodsec .cards2 h2 {
+    color: #7affd3;
     font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.cards1 img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-.promo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .prodsec .cards2 .promo {
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; }
+    .prodsec .cards2 .promo div {
+      margin: 30px;
+      border: solid 1px wheat;
+      border-radius: 15px;
+      width: 200px;
+      height: 330px;
+      text-align: center;
+      background-color: antiquewhite;
+      box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75); }
+      .prodsec .cards2 .promo div img {
+        width: 200px;
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+      .prodsec .cards2 .promo div h3 {
+        color: black;
+        margin-bottom: 5px;
+        font-size: 20px; }
+      .prodsec .cards2 .promo div p {
+        color: black;
+        margin-bottom: 10px; }
+      .prodsec .cards2 .promo div form {
+        margin-bottom: 15px; }
+      .prodsec .cards2 .promo div a {
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+        color: black;
+        background-color: #f599f0; }
 
-.promo div {
-    margin: 30px;
-}
+.ubicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "gps text";
+  background-color: antiquewhite;
+  text-align: center;
+  align-items: center; }
+  .ubicacion .gps {
+    grid-area: gps; }
+    .ubicacion .gps iframe {
+      width: 100%;
+      height: 100vmin; }
+  .ubicacion .textubi {
+    grid-area: text; }
 
-.cards1 div div {
-    border: solid 1px wheat;
-    border-radius: 15px;
-    width: 200px;
-    height: 330px;
-    text-align: center;
-    background-color: rgb(250, 235, 215);
-    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-}
+@media screen and (max-width: 700px) {
+  .ubicacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "gps" "txt"; }
+  .gps {
+    grid-area: gps; }
+  .gps iframe {
+    width: 350px;
+    height: 100vh; }
+  .textubi {
+    grid-area: txt; } }
 
-.cards1 div div h3 {
-    color: black;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.cards1 div div p {
-    color: black;
-    margin-bottom: 10px;
-}
-
-.cards1 div div form {
-    margin-bottom: 15px;
-}
-
-.cards1 div div a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-}
-.cards2{
-    grid-area: cards2;
-}
-.cards2 h2 {
-    color: rgb(122, 255, 211);
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.cards2 img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-.cards2>div {
-    display: flex;
-    justify-items: center;
-}
-
-.promo div {
-    margin: 30px;
-}
-
-.cards2 div div {
-    border: solid 1px wheat;
-    border-radius: 15px;
-    width: 200px;
-    height: 330px;
-    text-align: center;
-    background-color: rgb(250, 235, 215);
-    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-}
-
-.cards2 div div h3 {
-    color: black;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.cards2 div div p {
-    color: black;
-    margin-bottom: 10px;
-}
-
-.cards2 div div form {
-    margin-bottom: 15px;
-}
-
-.cards2 div div a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-}
-/* ----------------------------------- */
-/* ----------CSS de juguetes--------- */
-/* --------------------------------- */
-.grid-contenedor-padre{
-    background-image:url(../img/pañales.jpg);
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: auto;
-    grid-template-areas:
-        "submenu cards1 cards1"
-        "submenu cards2 cards2";
-}
-.submenup {
+.grid-contenedor-padre {
+  background-image: url(../img/pañales.jpg);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
+  .grid-contenedor-padre .submenup {
     grid-area: submenu;
     margin-top: 50%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.filtro-juguetes {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  .grid-contenedor-padre .filtro-juguetes {
     background-color: rgba(240, 192, 130, 0.863);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px;
-}
-
-.filtro-juguetes div {
-    margin: 35px;
-}
-.cards1-juguetes{
-    grid-area: cards1;
-}
-.cards1-juguetes h2 {
-    color: rgb(122, 255, 211);
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.cards1-juguetes img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-.promo {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cards1-juguetes div div {
-    border: solid 1px wheat;
-    border-radius: 15px;
-    width: 200px;
-    height: 330px;
-    text-align: center;
-    background-color: rgb(250, 235, 215);
-    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-}
-
-.cards1-juguetes div div h3 {
-    color: black;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.cards1-juguetes div div p {
-    color: black;
-    margin-bottom: 10px;
-}
-
-.cards1-juguetes div div form {
-    margin-bottom: 15px;
-}
-
-.cards1-juguetes div div a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-}
-.cards2-juguetes{
-    grid-area: cards2;
-}
-.cards2-juguetes h2 {
-    color: rgb(122, 255, 211);
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.cards2-juguetes img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-.cards2-juguetes>div {
-    display: flex;
-    justify-items: center;
-}
-
-.promo div {
-    margin: 30px;
-}
-
-.cards2-juguetes div div {
-    border: solid 1px wheat;
-    border-radius: 15px;
-    width: 200px;
-    height: 330px;
-    text-align: center;
-    background-color: rgb(250, 235, 215);
-    box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
-}
-
-.cards2-juguetes div div h3 {
-    color: black;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.cards2-juguetes div div p {
-    color: black;
-    margin-bottom: 10px;
-}
-
-.cards2-juguetes div div form {
-    margin-bottom: 15px;
-}
-
-.cards2-juguetes div div a {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    background-color: rgb(245, 153, 240);
-}
-/*-----------CSS de ubicacion---------- */
-.ubicacion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "gps text";
-    background-color: antiquewhite;
-    text-align: center;
-    align-items: center;
-}
-.gps{
-    grid-area: gps;
-}
-.gps iframe{
-    width:100%;
-    height: 100vmin;
-}
-.textubi {
-    grid-area: text;
-    
-}
-@media screen and (max-width: 700px) {
-    .ubicacion{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "gps"
-        "txt";
-    }
-    .gps{
-        grid-area: gps;
-    }
-    .gps iframe{
-        width:350px;
-        height: 100vh;
-    }
-    .textubi{
-        grid-area: txt;
-    }
-}
-/* -----------CSS de contacto---------- */
-
-#contacto{
-    background-image: linear-gradient(rgb(255, 220, 175), rgb(255, 255, 255));
-}
-
-/* -----------CSS del footer---------- */
-.pie {
-    background-color: aqua;
-    position: absolute;
-    width: 100%;
-    padding: 1em 0;
-}
-
-.pie ul {
-    text-align: center;
-}
-
-.pie ul li {
-
-    display: inline-block;
-    margin: 20px;
-}
-
-.LogoPie {
-    width: 40px;
-    height: 40px;
-    align-items: center;
-}
-@media screen and (max-width:560px) {
-    
-    .pie ul li{
-        display: flex;
-        flex-direction: column;
+    padding: 10px; }
+    .grid-contenedor-padre .filtro-juguetes div {
+      margin: 35px; }
+  .grid-contenedor-padre .cards1-juguetes {
+    grid-area: cards1; }
+    .grid-contenedor-padre .cards1-juguetes h2 {
+      color: #7affd3;
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .grid-contenedor-padre .cards1-juguetes .promo {
+      display: flex;
+      justify-content: center; }
+      .grid-contenedor-padre .cards1-juguetes .promo div {
+        margin: 30px;
+        border: solid 1px wheat;
+        border-radius: 15px;
+        width: 200px;
+        height: 330px;
         text-align: center;
-    }
-}
+        background-color: antiquewhite;
+        box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75); }
+        .grid-contenedor-padre .cards1-juguetes .promo div img {
+          width: 200px;
+          height: 200px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px; }
+        .grid-contenedor-padre .cards1-juguetes .promo div h3 {
+          color: black;
+          margin-bottom: 5px;
+          font-size: 20px; }
+        .grid-contenedor-padre .cards1-juguetes .promo div p {
+          color: black;
+          margin-bottom: 10px; }
+        .grid-contenedor-padre .cards1-juguetes .promo div form {
+          margin-bottom: 15px; }
+        .grid-contenedor-padre .cards1-juguetes .promo div a {
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 5px;
+          color: black;
+          background-color: #f599f0; }
+  .grid-contenedor-padre .cards2-juguetes {
+    grid-area: cards2; }
+    .grid-contenedor-padre .cards2-juguetes h2 {
+      color: #7affd3;
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .grid-contenedor-padre .cards2-juguetes .promo {
+      display: flex;
+      justify-items: center; }
+      .grid-contenedor-padre .cards2-juguetes .promo div {
+        margin: 30px;
+        border: solid 1px wheat;
+        border-radius: 15px;
+        width: 200px;
+        height: 330px;
+        text-align: center;
+        background-color: antiquewhite;
+        box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px -3px rgba(3, 0, 0, 0.75); }
+        .grid-contenedor-padre .cards2-juguetes .promo div img {
+          width: 200px;
+          height: 200px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px; }
+        .grid-contenedor-padre .cards2-juguetes .promo div h3 {
+          color: black;
+          margin-bottom: 5px;
+          font-size: 20px; }
+        .grid-contenedor-padre .cards2-juguetes .promo div p {
+          color: black;
+          margin-bottom: 10px; }
+        .grid-contenedor-padre .cards2-juguetes .promo div form {
+          margin-bottom: 15px; }
+        .grid-contenedor-padre .cards2-juguetes .promo div a {
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 5px;
+          color: black;
+          background-color: #f599f0; }
+
+#contacto {
+  background-image: linear-gradient(#ffdcaf, white); }
