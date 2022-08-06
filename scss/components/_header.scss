@@ -1,9 +1,10 @@
+@import "../base/variables";
 header{
     a{
         &:hover{
             text-decoration: solid;
             font-size: 20px;
-            background-color: antiquewhite;
+            background-color: $color-secundario;
             border: 1px solid black;
             border-radius: 15px;
             animation: marcado;
