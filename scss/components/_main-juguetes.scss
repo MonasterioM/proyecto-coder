@@ -1,5 +1,5 @@
 .grid-contenedor-padre{
-    background-image:url(../img/pañales.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/pañales.jpg);
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: auto;
@@ -10,7 +10,6 @@
         grid-area: submenu;
         margin-top: 50%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-       }        
         .filtro-juguetes{
             background-color: rgba(240, 192, 130, 0.863);
             border: 2px solid black;
@@ -20,6 +19,8 @@
                 margin: 35px;
             }
         }
+       }        
+        
         .cards1-juguetes{
             grid-area: cards1;
             h2{

@@ -24,8 +24,8 @@ header a:hover {
       display: inline-block;
       margin: 20px; }
       .pie ul li a .LogoPie {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         align-items: center; }
 
 @media screen and (max-width: 560px) {
@@ -124,7 +124,7 @@ main {
     grid-area: imagenes; } }
 
 .prodsec {
-  background-image: url(../img/pañales.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pañales.jpg);
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
@@ -251,7 +251,7 @@ main {
     grid-area: txt; } }
 
 .grid-contenedor-padre {
-  background-image: url(../img/pañales.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pañales.jpg);
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
@@ -260,13 +260,13 @@ main {
     grid-area: submenu;
     margin-top: 50%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-  .grid-contenedor-padre .filtro-juguetes {
-    background-color: rgba(240, 192, 130, 0.863);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px; }
-    .grid-contenedor-padre .filtro-juguetes div {
-      margin: 35px; }
+    .grid-contenedor-padre .submenup .filtro-juguetes {
+      background-color: rgba(240, 192, 130, 0.863);
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px; }
+      .grid-contenedor-padre .submenup .filtro-juguetes div {
+        margin: 35px; }
   .grid-contenedor-padre .cards1-juguetes {
     grid-area: cards1; }
     .grid-contenedor-padre .cards1-juguetes h2 {

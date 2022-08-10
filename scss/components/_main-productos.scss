@@ -1,5 +1,5 @@
 .prodsec{
-    background-image:url(../img/pañales.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/pañales.jpg);
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: auto;
