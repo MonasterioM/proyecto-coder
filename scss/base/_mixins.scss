@@ -1,0 +1,10 @@
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin h3 ($color, $margin-bottom, $font-size) {
+    color: $color;
+    margin-bottom: $margin-bottom;
+    font-size: $font-size;
+}

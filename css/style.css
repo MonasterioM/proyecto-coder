@@ -34,6 +34,16 @@ header a:hover {
     flex-direction: column;
     text-align: center; } }
 
+.grid-contenedor-padre .submenup {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .principal .cards .promo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
 main {
   font-family: Georgia, 'Times New Roman', Times, serif; }
   main .cabeza {
@@ -56,35 +66,31 @@ main {
       color: #7affd3;
       font-size: 35px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-    main .principal .cards .promo {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; }
-      main .principal .cards .promo div {
-        border: solid 1px wheat;
-        border-radius: 15px;
+    main .principal .cards .promo div {
+      border: solid 1px wheat;
+      border-radius: 15px;
+      width: 200px;
+      height: 300px;
+      text-align: center;
+      background-color: antiquewhite; }
+      main .principal .cards .promo div img {
         width: 200px;
-        height: 300px;
-        text-align: center;
-        background-color: antiquewhite; }
-        main .principal .cards .promo div img {
-          width: 200px;
-          height: 200px;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px; }
-        main .principal .cards .promo div h3 {
-          color: black;
-          margin-bottom: 10px;
-          font-size: 20px; }
-        main .principal .cards .promo div p {
-          color: black;
-          margin-bottom: 20px; }
-        main .principal .cards .promo div a {
-          text-decoration: none;
-          padding: 5px;
-          border-radius: 5px;
-          color: black;
-          background-color: #f599f0; }
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+      main .principal .cards .promo div h3 {
+        color: black;
+        margin-bottom: 10px;
+        font-size: 20px; }
+      main .principal .cards .promo div p {
+        color: black;
+        margin-bottom: 20px; }
+      main .principal .cards .promo div a {
+        text-decoration: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        color: black;
+        background-color: #f599f0; }
 
 @media screen and (max-width: 805px) {
   main h1 {
@@ -123,6 +129,16 @@ main {
   .imagenes {
     grid-area: imagenes; } }
 
+.grid-contenedor-padre .submenup {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .principal .cards .promo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
 .prodsec {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pañales.jpg);
   display: grid;
@@ -131,9 +147,9 @@ main {
   grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
   .prodsec .submenup {
     grid-area: submenu;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center; }
     .prodsec .submenup nav ul .filtro-productos {
       background-color: rgba(240, 192, 130, 0.863);
@@ -177,7 +193,7 @@ main {
         .prodsec .cards1 .promo div form {
           margin-bottom: 15px; }
         .prodsec .cards1 .promo div a {
-          text-decoration: none;
+          text-decoration: 5px;
           padding: 5px;
           border-radius: 5px;
           color: black;
@@ -215,7 +231,7 @@ main {
       .prodsec .cards2 .promo div form {
         margin-bottom: 15px; }
       .prodsec .cards2 .promo div a {
-        text-decoration: none;
+        text-decoration: 5px;
         padding: 5px;
         border-radius: 5px;
         color: black;
@@ -249,6 +265,16 @@ main {
     height: 100vh; }
   .textubi {
     grid-area: txt; } }
+
+.grid-contenedor-padre .submenup {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .principal .cards .promo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .grid-contenedor-padre {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pañales.jpg);
@@ -302,7 +328,7 @@ main {
         .grid-contenedor-padre .cards1-juguetes .promo div form {
           margin-bottom: 15px; }
         .grid-contenedor-padre .cards1-juguetes .promo div a {
-          text-decoration: none;
+          text-decoration: 5px;
           padding: 5px;
           border-radius: 5px;
           color: black;
@@ -342,7 +368,7 @@ main {
         .grid-contenedor-padre .cards2-juguetes .promo div form {
           margin-bottom: 15px; }
         .grid-contenedor-padre .cards2-juguetes .promo div a {
-          text-decoration: none;
+          text-decoration: 5px;
           padding: 5px;
           border-radius: 5px;
           color: black;

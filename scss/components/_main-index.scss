@@ -1,4 +1,6 @@
 @import "../base/variables";
+@import "../base/maps";
+@import "../base/extends";
 main{
     font-family: Georgia, 'Times New Roman', Times, serif;
     .cabeza{
@@ -31,9 +33,7 @@ main{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
             }
             .promo{
-                display: flex;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
+                @extend %flex-index;
                 div{
                     border: solid 1px wheat;
                     border-radius: 15px;
@@ -57,11 +57,11 @@ main{
                         margin-bottom: 20px;
                     }
                     a{
-                        text-decoration: none;
-                        padding: 5px;
-                        border-radius: 5px;
-                        color: black;
-                        background-color: rgb(245, 153, 240);                   
+                        text-decoration: map-get($boton , padding );
+                        padding: map-get($boton , padding );
+                        border-radius: map-get($boton , border-radius );
+                        color: map-get($boton , color-texto );
+                        background-color: map-get($boton , bg-boton );                   
                     }
                 }
             }

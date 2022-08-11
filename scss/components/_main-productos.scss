@@ -1,3 +1,6 @@
+@import "../base/maps";
+@import "../base/extends";
+@import "../base/mixins";
 .prodsec{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/pañales.jpg);
     display: grid;
@@ -8,10 +11,8 @@
         "submenu cards2 cards2";
         .submenup{
             grid-area: submenu;
-            display: flex;
-            justify-content: center;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            align-items: center;
+            @include flex(flex, center, center);
             nav{
                 ul{
                     .filtro-productos{
@@ -54,9 +55,7 @@
                         border-top-right-radius: 15px;                 
                     }
                     h3{
-                        color: black;
-                        margin-bottom: 5px;
-                        font-size: 20px;
+                        @include h3 (black, 5px, 20px);
                     }
                     p{
                         color: black;
@@ -66,11 +65,11 @@
                         margin-bottom: 15px;
                     }
                     a{
-                        text-decoration: none;
-                        padding: 5px;
-                        border-radius: 5px;
-                        color: black;
-                        background-color: rgb(245, 153, 240);
+                        text-decoration: map-get($boton , padding );
+                        padding: map-get($boton , padding );
+                        border-radius: map-get($boton , border-radius );
+                        color: map-get($boton , color-texto );
+                        background-color: map-get($boton , bg-boton );
                     }
                 }
             }
@@ -102,9 +101,7 @@
                         border-top-right-radius: 15px;                 
                     }
                     h3{
-                        color: black;
-                        margin-bottom: 5px;
-                        font-size: 20px;
+                        @include h3 (black, 5px, 20px);
                     }
                     p{
                         color: black;
@@ -114,11 +111,11 @@
                         margin-bottom: 15px;
                     }
                     a{
-                        text-decoration: none;
-                        padding: 5px;
-                        border-radius: 5px;
-                        color: black;
-                        background-color: rgb(245, 153, 240);
+                        text-decoration: map-get($boton , padding );
+                        padding: map-get($boton , padding );
+                        border-radius: map-get($boton , border-radius );
+                        color: map-get($boton , color-texto );
+                        background-color: map-get($boton , bg-boton );
                     }
                 }
             }
