@@ -28,12 +28,6 @@ header a:hover {
         height: 35px;
         align-items: center; }
 
-@media screen and (max-width: 560px) {
-  .pie ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center; } }
-
 .grid-contenedor-padre .submenup {
   display: flex;
   justify-content: center;
@@ -91,43 +85,6 @@ main {
         border-radius: 5px;
         color: black;
         background-color: #f599f0; }
-
-@media screen and (max-width: 805px) {
-  main h1 {
-    font-size: 50px; } }
-
-@media screen and (max-width: 654px) {
-  main h1 {
-    font-size: 40px; } }
-
-@media screen and (max-width: 510px) {
-  main h1 {
-    font-size: 30px; } }
-
-@media screen and (max-width: 1075px) {
-  .cabeza img {
-    width: 500px;
-    height: 450px; } }
-
-@media screen and (max-width: 619px) {
-  .cabeza img {
-    width: 400px;
-    height: 350px; } }
-
-@media screen and (max-width: 444px) {
-  .cabeza img {
-    width: 350px;
-    height: 300px; } }
-
-@media screen and (max-width: 960px) {
-  .ofertas {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "video" "imagenes"; }
-  .video {
-    grid-area: video; }
-  .imagenes {
-    grid-area: imagenes; } }
 
 .grid-contenedor-padre .submenup {
   display: flex;
@@ -253,19 +210,6 @@ main .principal .cards .promo {
   .ubicacion .textubi {
     grid-area: text; }
 
-@media screen and (max-width: 700px) {
-  .ubicacion {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "gps" "txt"; }
-  .gps {
-    grid-area: gps; }
-  .gps iframe {
-    width: 350px;
-    height: 100vh; }
-  .textubi {
-    grid-area: txt; } }
-
 .grid-contenedor-padre .submenup {
   display: flex;
   justify-content: center;
@@ -376,3 +320,54 @@ main .principal .cards .promo {
 
 #contacto {
   background-image: linear-gradient(#ffdcaf, white); }
+
+@media screen and (max-width: 805px) {
+  main h1 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 654px) {
+  main h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 510px) {
+  main h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1075px) {
+  .cabeza img {
+    width: 500px;
+    height: 450px; } }
+
+@media screen and (max-width: 619px) {
+  .cabeza img {
+    width: 400px;
+    height: 350px; } }
+
+@media screen and (max-width: 444px) {
+  .cabeza img {
+    width: 350px;
+    height: 300px; } }
+
+@media screen and (max-width: 960px) {
+  .ofertas {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 700px) {
+  .ubicacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "gps" "txt"; }
+  .gps {
+    grid-area: gps; }
+  .gps iframe {
+    width: 350px;
+    height: 100vh; }
+  .textubi {
+    grid-area: txt; } }
+
+@media screen and (max-width: 560px) {
+  .pie ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }

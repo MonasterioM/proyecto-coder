@@ -17,22 +17,3 @@
         grid-area:text;
     }
 }
-@media screen and (max-width: 700px) {
-    .ubicacion{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "gps"
-        "txt";
-    }
-    .gps{
-        grid-area: gps;
-    }
-    .gps iframe{
-        width:350px;
-        height: 100vh;
-    }
-    .textubi{
-        grid-area: txt;
-    }
-}
