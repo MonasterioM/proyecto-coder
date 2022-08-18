@@ -104,7 +104,8 @@ main .principal .cards .promo {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
-  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
+  grid-template-areas: "submenu cards1 cards1"
+ "submenu cards2 cards2"; }
   .prodsec .submenup {
     grid-area: submenu;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -228,7 +229,8 @@ main .principal .cards .promo {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
-  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
+  grid-template-areas: "submenu cards1 cards1"
+ "submenu cards2 cards2"; }
   .grid-contenedor-padre .submenup {
     grid-area: submenu;
     margin-top: 50%;
@@ -360,7 +362,8 @@ main .principal .cards .promo {
   .ubicacion {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "gps" "txt"; }
+    grid-template-areas: "gps"
+ "txt"; }
     .ubicacion .gps {
       grid-area: gps; }
       .ubicacion .gps iframe {
@@ -373,7 +376,8 @@ main .principal .cards .promo {
   .ubicacion {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "gps" "txt"; }
+    grid-template-areas: "gps"
+ "txt"; }
     .ubicacion .gps {
       grid-area: gps; }
       .ubicacion .gps iframe {
