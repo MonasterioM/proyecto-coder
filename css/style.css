@@ -51,10 +51,12 @@ main {
       font-style: italic;
       font-size: 50px;
       font-weight: 700; }
-  main .principal .carrusell .ofertas img {
-    height: 400px; }
+  main .principal .carrusell {
+    margin-top: 50px; }
+    main .principal .carrusell .ofertas img {
+      height: 400px; }
   main .principal .cards {
-    background-image: url(/img/pañales.jpg);
+    background-image: url(../img/pañales.jpg);
     padding-bottom: 20px; }
     main .principal .cards h2 {
       color: #7affd3;
@@ -66,7 +68,8 @@ main {
       width: 200px;
       height: 300px;
       text-align: center;
-      background-color: antiquewhite; }
+      background-color: antiquewhite;
+      margin: 5px; }
       main .principal .cards .promo div img {
         width: 200px;
         height: 200px;
@@ -125,7 +128,7 @@ main .principal .cards .promo {
       display: flex;
       flex-wrap: wrap; }
       .prodsec .cards1 .promo div {
-        margin: 30px;
+        margin: 5px;
         border: solid 1px wheat;
         border-radius: 15px;
         width: 200px;
@@ -163,7 +166,7 @@ main .principal .cards .promo {
     display: flex;
     flex-wrap: wrap; }
     .prodsec .cards2 .promo div {
-      margin: 30px;
+      margin: 5px;
       border: solid 1px wheat;
       border-radius: 15px;
       width: 200px;
@@ -247,7 +250,7 @@ main .principal .cards .promo {
       display: flex;
       justify-content: center; }
       .grid-contenedor-padre .cards1-juguetes .promo div {
-        margin: 30px;
+        margin: 5px;
         border: solid 1px wheat;
         border-radius: 15px;
         width: 200px;
@@ -287,7 +290,7 @@ main .principal .cards .promo {
       display: flex;
       justify-items: center; }
       .grid-contenedor-padre .cards2-juguetes .promo div {
-        margin: 30px;
+        margin: 5px;
         border: solid 1px wheat;
         border-radius: 15px;
         width: 200px;
@@ -322,49 +325,62 @@ main .principal .cards .promo {
   background-image: linear-gradient(#ffdcaf, white); }
 
 @media screen and (max-width: 805px) {
-  main h1 {
-    font-size: 50px; } }
+  .cabeza .Titulo-Principal {
+    font-size: 45px; } }
 
 @media screen and (max-width: 654px) {
-  main h1 {
+  .cabeza .Titulo-Principal {
     font-size: 40px; } }
 
 @media screen and (max-width: 510px) {
-  main h1 {
+  .cabeza .Titulo-Principal {
     font-size: 30px; } }
 
 @media screen and (max-width: 1075px) {
-  .cabeza img {
+  .cabeza .container-fluid div div .principal-logo {
     width: 500px;
     height: 450px; } }
 
 @media screen and (max-width: 619px) {
-  .cabeza img {
-    width: 400px;
-    height: 350px; } }
+  .cabeza .container-fluid div div .principal-logo {
+    width: 450px;
+    height: 400px; } }
 
 @media screen and (max-width: 444px) {
-  .cabeza img {
+  .cabeza .container-fluid div div .principal-logo {
     width: 350px;
     height: 300px; } }
 
 @media screen and (max-width: 960px) {
-  .ofertas {
+  .principal .carrusell .ofertas {
     width: auto;
     height: auto; } }
+
+@media screen and (max-width: 1059px) {
+  .ubicacion {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "gps" "txt"; }
+    .ubicacion .gps {
+      grid-area: gps; }
+      .ubicacion .gps iframe {
+        width: 600px;
+        height: 100vh; }
+    .ubicacion .textubi {
+      grid-area: txt; } }
 
 @media screen and (max-width: 700px) {
   .ubicacion {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "gps" "txt"; }
-  .gps {
-    grid-area: gps; }
-  .gps iframe {
-    width: 350px;
-    height: 100vh; }
-  .textubi {
-    grid-area: txt; } }
+    .ubicacion .gps {
+      grid-area: gps; }
+      .ubicacion .gps iframe {
+        width: 350px;
+        height: 70vh; }
+    .ubicacion .textubi {
+      grid-area: txt; } }
 
 @media screen and (max-width: 560px) {
   .pie ul li {

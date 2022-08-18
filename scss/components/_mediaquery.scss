@@ -1,44 +1,99 @@
 // ------------------ INDEX ---------------------
 @media screen and (max-width: 805px){
-    main h1{
-        font-size: 50px;
+   .cabeza{
+    .Titulo-Principal{
+            font-size: 45px;
+        }
     }
 }
 @media screen and (max-width: 654px){
-    main h1{
+    .cabeza {
+        .Titulo-Principal{
         font-size: 40px;
+        }
     }
 }
 @media screen and (max-width: 510px){
-    main h1{
+    .cabeza{
+        .Titulo-Principal{
         font-size: 30px;
+        }
     }
 }
 @media screen and (max-width: 1075px){
-    .cabeza img{
-        width: 500px;
-        height: 450px;
-    }
+        .cabeza{
+            .container-fluid{
+                div{
+                    div{
+                        .principal-logo{
+                            width: 500px;
+                            height: 450px;
+                        }
+                    }
+                }
+            }
+        }
 }
 @media screen and (max-width: 619px){
-    .cabeza img{
-        width: 400px;
-        height: 350px;
-    }
+    .cabeza{
+        .container-fluid{
+            div{
+                div{
+                    .principal-logo{
+                        width: 450px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }    
 }
 @media screen and (max-width: 444px){
-    .cabeza img{
-        width: 350px;
-        height: 300px;
+    .cabeza{
+        .container-fluid{
+            div{
+                div{
+                    .principal-logo{
+                        width: 350px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
     }
+    
 }
 @media screen and (max-width: 960px) { 
-    .ofertas {
-        width: auto;
-        height: auto;
+    .principal{
+        .carrusell{
+            .ofertas {
+            width: auto;
+            height: auto;
+            }
+        }
     }
 }
 //-------------------UBICACION---------------------
+@media screen and (max-width: 1059px) {
+    .ubicacion{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "gps"
+        "txt";
+        .gps{
+            grid-area: gps;
+            iframe{
+                width:600px;
+                height: 100vh;
+            }
+        } 
+        .textubi{
+            grid-area: txt;
+        }
+    }
+    
+} 
 @media screen and (max-width: 700px) {
     .ubicacion{
         grid-template-columns: 1fr;
@@ -46,23 +101,28 @@
         grid-template-areas: 
         "gps"
         "txt";
+        .gps{
+            grid-area: gps;
+            iframe{
+                width:350px;
+                height: 70vh;
+            }
+        } 
+        .textubi{
+            grid-area: txt;
+        }
     }
-    .gps{
-        grid-area: gps;
-    }
-    .gps iframe{
-        width:350px;
-        height: 100vh;
-    }
-    .textubi{
-        grid-area: txt;
-    }
+    
 } 
 //-----------------FOOTER-------------
 @media screen and (max-width:560px) {    
-    .pie ul li{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .pie {
+        ul {
+            li{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     }
 }
