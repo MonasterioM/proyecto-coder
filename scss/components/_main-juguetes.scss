@@ -35,6 +35,7 @@
             .promo{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 div{
                     margin: 5px;
                     border: solid 1px wheat;
@@ -81,7 +82,8 @@
             }
             .promo{
                 display: flex;
-                justify-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
                 div{
                     margin: 5px;
                     border: solid 1px wheat;

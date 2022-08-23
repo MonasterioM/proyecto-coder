@@ -15,9 +15,10 @@ header a:hover {
 
 .pie {
   background-color: aqua;
-  position: absolute;
+  position: static;
   width: 100%;
-  padding: 1em 0; }
+  padding: 1em 0;
+  bottom: 0; }
   .pie ul {
     text-align: center; }
     .pie ul li {
@@ -104,8 +105,7 @@ main .principal .cards .promo {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
-  grid-template-areas: "submenu cards1 cards1"
- "submenu cards2 cards2"; }
+  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
   .prodsec .submenup {
     grid-area: submenu;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -127,7 +127,8 @@ main .principal .cards .promo {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
     .prodsec .cards1 .promo {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .prodsec .cards1 .promo div {
         margin: 5px;
         border: solid 1px wheat;
@@ -165,7 +166,8 @@ main .principal .cards .promo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
   .prodsec .cards2 .promo {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .prodsec .cards2 .promo div {
       margin: 5px;
       border: solid 1px wheat;
@@ -229,8 +231,7 @@ main .principal .cards .promo {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: auto;
-  grid-template-areas: "submenu cards1 cards1"
- "submenu cards2 cards2"; }
+  grid-template-areas: "submenu cards1 cards1" "submenu cards2 cards2"; }
   .grid-contenedor-padre .submenup {
     grid-area: submenu;
     margin-top: 50%;
@@ -250,7 +251,8 @@ main .principal .cards .promo {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
     .grid-contenedor-padre .cards1-juguetes .promo {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      flex-wrap: wrap; }
       .grid-contenedor-padre .cards1-juguetes .promo div {
         margin: 5px;
         border: solid 1px wheat;
@@ -290,7 +292,8 @@ main .principal .cards .promo {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
     .grid-contenedor-padre .cards2-juguetes .promo {
       display: flex;
-      justify-items: center; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .grid-contenedor-padre .cards2-juguetes .promo div {
         margin: 5px;
         border: solid 1px wheat;
@@ -362,8 +365,7 @@ main .principal .cards .promo {
   .ubicacion {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "gps"
- "txt"; }
+    grid-template-areas: "gps" "txt"; }
     .ubicacion .gps {
       grid-area: gps; }
       .ubicacion .gps iframe {
@@ -376,8 +378,7 @@ main .principal .cards .promo {
   .ubicacion {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "gps"
- "txt"; }
+    grid-template-areas: "gps" "txt"; }
     .ubicacion .gps {
       grid-area: gps; }
       .ubicacion .gps iframe {
